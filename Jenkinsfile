@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'develop', url: 'https://github.com/sub1983/simple-java-maven-app.git'
+                git clone 'https://github.com/sub1983/simple-java-maven-app.git'
             }
         }
         stage('Build') {
